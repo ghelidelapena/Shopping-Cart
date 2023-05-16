@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<header>
+    <h1>Amaysim Shopping Cart</h1><br><br>
+    <link rel="stylesheet" href="ShoppingCart.css" />
+    <script src="ShoppingCart.js"></script>
+</header>
+
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center"> 
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table id="myTable" class="table">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th class="text-right">
+                                    <span>Amount</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td><div id="code_small">ult_small</div></td>
+                                <td>Unlimited 1GB</td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" id='qty-small' name="qty" min="0" class="qty form-control" value="0"/>
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+                                <td>
+                                   <input type="text" id="price-small" value="24.90" class="price form-control" disabled />
+                                </td>
+                                <td align="right">$
+                                    <span id="amount" class="amount">0</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><div id="code_medium">ult_medium</div></td>
+                                <td>Unlimited 2GB</td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" id='qty-medium' name="qty" min="0" class="qty form-control" value="0"/>
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+                                <td>
+                                   <input type="text" id="price-medium" value="29.90" class="price form-control" disabled />
+                                </td>
+                                <td align="right">$
+                                    <span id="amount" class="amount">0</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div id="code_large">ult_large</div></td>
+                                <td>Unlimited 5GB</td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" id='qty-large' name="qty" min="0" class="qty form-control" value="0" />
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+                                <td>
+                                   <input type="text" id="price-large" value="44.90" class="price form-control" disabled />
+                                </td>
+                                <td align="right">$
+                                    <span id="amount" class="amount">0</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><div id="code_1gb">1gb</div></td>
+                                <td>1 GB Data-pack</td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" id='qty-1gb' name="qty" min="0" class="qty form-control" value="0"/>
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+                                <td>
+                                   <input type="text" value="9.90" class="price form-control" disabled/>
+                                </td>
+                                <td align="right">$
+                                    <span id="amount" class="amount">0</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td> </td>
+                                <td align="right">
+                                    <i>
+                                        Promo code: 
+                                    </i>
+                                </td>
+                                <td>
+                                        <input type="text" id="promoCode" class="promoCode"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4"></td>
+                                <td align="right">
+                                    <button class="total-calc">Add to cart</button>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <div>
+                                    <h2>Cart</h2>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="cart-items"></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        TOTAL = $ <span id="total" class="total">0</span>
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>
+                                    <strong>
+                                        <button class="purchase-btn">Purchase</button>
+                                    </strong>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
